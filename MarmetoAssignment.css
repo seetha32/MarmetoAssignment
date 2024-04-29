@@ -1,0 +1,107 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tabs-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 3px;
+    border-width: 0px;
+    cursor: pointer;
+
+}
+
+.discount {
+    color: #f71505;
+}
+
+.compare-price {
+    text-decoration: line-through;
+}
+
+.name-vendor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.select-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 3px;
+    border-width: 0px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.product-card {
+    border: none solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    height: 300px;
+    width: 200px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: auto;
+}
+
+.button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs button {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 767px) {
+    .product-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
